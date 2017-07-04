@@ -7,4 +7,6 @@
     <string name="thu">Thu</string>
     <string name="tue">Tue</string>
     <string name="wed">Wed</string>
+    <string name="month">month</string>
+    <string name="year">year</string>
 </resources>

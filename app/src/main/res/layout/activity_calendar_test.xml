@@ -22,6 +22,7 @@
         tools:layout_editor_absoluteX="31dp"/>-->
 
     <TableLayout
+        android:id="@+id/calendar"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -42,24 +43,60 @@
         tools:layout_constraintTop_creator="1">
 
         <TableRow
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/textMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/month"
+                android:textSize="24sp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/textYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textSize="14sp"/>
+        </TableRow>
+
+        <TableRow
             android:id="@+id/days"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/sun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="52dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
                 android:text="@string/sun"
-                android:textAlignment="center"/>
+                android:textAlignment="center">
+            </TextView>
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="52dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
                 android:text="@string/mon"
                 android:textAlignment="center"/>
 
@@ -68,6 +105,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="52dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
                 android:text="@string/tue"
                 android:textAlignment="center"/>
 
@@ -76,6 +115,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="52dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
                 android:text="@string/wed"
                 android:textAlignment="center"/>
 
@@ -84,6 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="52dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
                 android:text="@string/thu"
                 android:textAlignment="center"/>
 
@@ -92,6 +135,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="52dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
                 android:text="@string/fri"
                 android:textAlignment="center"/>
 
@@ -100,10 +145,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:width="52dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
                 android:text="@string/sat"
                 android:textAlignment="center"/>
 
         </TableRow>
 
     </TableLayout>
+
 </android.support.constraint.ConstraintLayout>
